@@ -28,3 +28,12 @@ for i in range(n):
                             # 재귀적으로 빈곳을 계속 채우면서 최종적으로 True가 나오면 답 + 1
             result += 1
 print(result)
+
+
+# 가장 간단한 형태
+# def dfs(array, start, visited):
+#     visited[start] = True
+#
+#     for i in array[start]:
+#         if visited[start] == False:
+#             dfs(array, i, visited)

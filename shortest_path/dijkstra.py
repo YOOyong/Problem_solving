@@ -62,3 +62,23 @@ def test(start):
 #해당 노드까지의 거리 + 갈 수 있는 노드까지의 거리를 더함.
 #위 계산 결과가 거리테이블에 있는 갈 수 있는 노드의 거리값보다 작으면 업데이트를 하고
 #(업데이트된 거리, 갈 수있는 노드)를 힙에 업데이트
+
+
+# def di(start):
+#     q = []
+#
+#     heapq.heappush(q, (0, start))
+#     dist[start] = 0
+#
+#     while q:
+#         dist, now = heapq.heappop(q)
+#
+#         if dist[now] < dist:
+#             continue
+#         for next in graph[now]:
+#             next_cost , next_node = next
+#
+#             cost = dist + next_cost
+#             if cost < dist[next_node]:
+#                 dist[next_node] = cost
+#                 q.heappush(q, (cost, next_node))

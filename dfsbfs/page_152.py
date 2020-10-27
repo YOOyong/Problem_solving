@@ -35,4 +35,16 @@ def bfs(x, y):
 
 print(bfs(0,0))
 
+# def bfs(array, start, visited):
+#     q = deque()
+#     q.append(start)
+#     visited[start] = True
+#
+#     while q:
+#         now = q.popleft()
+#         for i in array[now]:
+#             if not visited[now]:
+#                 visited[i] = True
+#                 q.append(i)
+
 
