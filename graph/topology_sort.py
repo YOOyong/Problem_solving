@@ -42,4 +42,19 @@ def topology_sort():
                 q.append(i)
     return print(result)
 
-topology_sort()
+# def topo():
+#     result = []
+#     q= deque()
+#
+#     for i in range(1, v +1):
+#         if indegree[i] == 0:
+#             q.append(i)
+#     while q:
+#         now = q.popleft()
+#         result.append(now)
+#         for next_node in graph[now]:
+#             indegree[next_node] -= 1
+#
+#             if indegree[next_node] == 0:
+#                 q.append(next_node)
+#     return print(result)
