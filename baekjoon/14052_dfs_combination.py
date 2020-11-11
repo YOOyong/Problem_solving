@@ -33,7 +33,7 @@ def cal_safezone(graph):
                 count += 1
     return count
 
-#벽을 치는 dfs
+#벽을 치고 계산하는 dfs
 def dfs_wall(walls):
     global result
     #벽을 다 세웠으면 바이러스 퍼뜨리고 계산
@@ -47,7 +47,7 @@ def dfs_wall(walls):
 
         result = max(result, cal_safezone(walled_graph))
         return
-
+    #모든 벽을 순회하면서.=
     for i in range(n):
         for j in range(m):
             if origin_graph[i][j] == 0: #벽이 없는곳이면
