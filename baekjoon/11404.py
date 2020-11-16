@@ -11,6 +11,7 @@ graph = [[MAX] * n for _ in range(n)]
 
 for _ in range(m):
     start, end, cost = map(int, input().split())
+    #경로를 입력 받을때 문제의 조건에 맞게 동일 경로라도 최소거리로 최신화하여 받는다.
     if cost < graph[start-1][end-1]:
         graph[start-1][end-1] = cost
 
